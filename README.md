@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @pandalf95
 - 👀 I’m interested in front end developing
-- 🌱 I’m currently learning javascript, responsive web design
+- 🌱 I’m currently learning html5, css3, javascript, responsive web design
 - 💞️ I’m looking to collaborate on open source projects
 - 📫 How to reach me: <a href="https://www.linkedin.com/in/fabrizio-conti-4878a5121/">Linkedin</a>
 
