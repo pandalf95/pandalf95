@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+}
+
+body{
+    width: 1058px; /*Secondo internet la larghezza di un A4 circa*/
+    margin: 0 auto;
+    border: 1.5px solid black;
+    padding: 0 20px;
+    background-color: lightyellow;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header img {
+    margin: 15px;
+    float: right;
+}
+
+nav {
+    border: 1px solid black;
+    width: 250px;
+    background-color: lightgray;
+    padding: 0 10px;
+    margin: 5% 0;
+}
+
+article {
+    margin: 10% 0;
+}
+
+article a {
+    text-decoration-line: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+footer {
+    font-weight: bolder;
+    text-align: right;
+}
+
+#tag-deprecati img{
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.italic {
+    font-style: italic;
+}
