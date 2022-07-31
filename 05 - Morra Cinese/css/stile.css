@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Kufam', sans-serif;
+}
+
+body {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+nav ul {
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    background-color: #000;
+}
+
+nav li:hover {
+    background-color: #16222A;
+}
+
+nav li:hover li {
+    display: block;
+}
+
+nav li li {
+    width: 100%;
+    display: none;
+    padding: 1em 0;
+}
+
+img {
+    display: block;
+    margin: 70px auto 0;
+    max-width: 100%;
+}
+
+#inizia, #riprova {
+    width: 300px;
+    font-size: 4em;
+    display: block;
+    margin: 1em auto;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #2c3e50;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    padding-top: .2em;
+}
+
+#riprova {
+    margin: 11em auto 0;
+    display: none;
+    position: relative;
+    z-index: 100;
+}
+
+
+#inizia:hover, #riprova:hover {
+    background: #4c5e70;
+    border: 2px solid #fff;
+}
+
+ul {
+    list-style: none;
+    margin: 0 200px;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+#scelta li {
+    float:left;
+    max-width: 20%;
+}
+
+#scelta img, #esito img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #000;
+    transition: .5s;
+}
+
+#scelta {
+    margin: 10% auto;
+    display: none;
+}
+
+#scelta img:hover {
+    transform: scale(1.5);
+}
+
+#esito li {
+    float: left;
+    width: 50%;
+}
+
+#esito {
+    position: fixed;
+    top: 20%;
+    display: none;
+    width: 100%;
+}
+
+#esito img {
+    cursor: default;
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+    font-size: 2em;
+}
+
+#pUtente, #pCpu {
+    font-size: 5em;
+    position: fixed;
+    top: 80%;
+}
+
+#pUtente {
+    left: .5em;
+}
+
+#pCpu {
+    right: .5em;
+}
+
+#home {
+    position: fixed;
+    top: 6px;
+    left: 1em;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+    z-index: -1;
+}
+
+#home:hover {
+    width: 55px;
+}
+
+@media screen and (max-width:1200px) {
+    
+    #scelta li {
+        max-width: 33%;
+        margin-bottom: 2em;
+    }
+
+    #esito {
+        top: 30%;
+    }
+
+    h2 {
+        margin-top: 300px;
+    }
+
+    
+}
+
+@media screen and (max-width:800px) {
+
+    #scelta li {
+        max-width: 50%;
+    }
+
+    #esito li {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #esito {
+        top: 15%;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+
+    #scelta li {
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #esito {
+        top: 25%;
+    }
+
+    h1 {
+        margin-top: 2em;
+    }
+    
+}
+
