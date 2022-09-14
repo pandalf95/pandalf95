@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html CRUD in Vanilla JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="script/main.js"></script>
+    <script src="script/employees.js"></script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>
+          <form name="crud-form" autocomplete="off">
+            <div>
+              <label for="fullName">Full Name*</label
+              ><span class="validation-error hide" id="fullNameValidationError"
+                >This field is required.</span
+              >
+              <input type="text" name="fullName" id="fullName" pattern="[a-zA-Z ]{3,}"/>
+            </div>
+            <div>
+              <label for="empCode">EMP Code</label>
+              <input type="text" name="empCode" id="empCode" pattern="[0-9]+" />
+            </div>
+            <div>
+              <label for="salary">Salary</label>
+              <input type="text" name="salary" id="salary" pattern="[1-9]+[0-9]{2,}€?" />
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" pattern="[a-zA-Z ]{3,}" />
+            </div>
+            <div class="form-action-buttons">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table class="list" id="employeeList">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>EMP Code</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <button id="get-simulation">Add external employee</button>
+
+  </body>
+</html>
