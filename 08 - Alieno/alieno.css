@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+#cardAlieno {
+    border: 3px solid #000;
+    width: 60vw;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    background-color: #aaf;
+    position: relative;
+}
+
+#cardAlieno img {
+    display: block;
+    border-right: 3px solid #000;
+    height: 100%;
+}
+
+#attributiAlieno {
+    position:absolute;
+    top: 20px;
+    left: 400px;
+}
+
+#attributiAlieno img {
+    width: 5vw;
+    display: inline-block;
+    border-right: none;
+}
+
+#interfaccia {
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+#interfaccia input {
+    width: 50%;
+    padding: 10px;  
+    display: block;
+    float: left;
+    border: 3px solid #000;
+    border-top: none;
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+#interfaccia #nome {
+    border-right: none;
+}
+
+#interfaccia input:focus {
+    outline: none;
+}
+
+#interfaccia span {
+    color: #f00;
+    background-color: #faa;
+    border: 1px solid #f00;
+    padding: 5px;
+    width: 50%;
+    top: -39.2px;
+    left: 50%;
+    position: fixed;
+    
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#inizializza {
+    width: 30%;
+    background-color: #ff9;
+    border: 2px solid #000;
+}
+
+#inizializza:hover {
+    background-color: #cc6;
+}
+
+#vitepiu, #vitemeno {
+    width: 20%;
+    border: 2px solid #000;
+}
+
+#vitepiu:hover {
+    background-color: #afa;
+}
+
+#vitemeno:hover {
+    background-color: #faa;
+}
+
+#armiAggiuntive {
+    border: 3px solid #000;
+    background-color: #aaf;
+    padding: 20px;
+    width: 60vw;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#armiAggiuntive img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.nascondi {
+    display:none;
+}

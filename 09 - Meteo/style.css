@@ -1,0 +1,103 @@
+* {
+    font-family: 'Mandali', sans-serif;
+}
+
+body {
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inserisciDati {
+    width: 1000px;
+    margin: 50px auto;
+    height: 50px;
+}
+
+#inserisciDati input, #inserisciDati select {
+    border: none;
+    width: 42.3%;
+    font-size: 1.5em;
+    border-radius: 5px;
+    height: 100%;
+    text-indent: .3em;
+}
+
+#inserisciDati button {
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #cc0;
+    display: inline-block;
+}
+
+#inserisciDati button:hover {
+    border-color: #fff;
+}
+
+#risultato h2, #risultato h3 {
+    text-align: center;
+}
+
+#risultato h2 {
+    font-size: 3em;
+}
+
+#risultato h3 {
+    font-size: 2.5em;
+}
+
+#risultato ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#risultato ul li {
+    float: left;
+    width: 33.33%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#risultato ul li img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+#minmax {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#minmax th {
+    font-size: 1.5em;
+}
+
+.hide {
+    display: none;
+}
+
+span {
+    color: #f00;
+    text-shadow: none;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+#inserisciDati button.red {
+    background-color: #c40;
+}
