@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/red-hat-display-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/red-hat-display-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/red-hat-display-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/red-hat-display-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/red-hat-display-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/red-hat-display-v14-latin-regular.svg#RedHatDisplay') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'social';
+    src: url('./fonts/social.eot?12648479');
+    src: url('./fonts/social.eot?12648479#iefix') format('embedded-opentype'),
+         url('./fonts/social.woff2?12648479') format('woff2'),
+         url('./fonts/social.woff?12648479') format('woff'),
+         url('./fonts/social.ttf?12648479') format('truetype'),
+         url('./fonts/social.svg?12648479#social') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* #region HEADER */
+
+header {
+    background-color: #222;
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo img{
+    display: block;
+    margin: 0 auto 16px;
+    padding-top: 16px;
+}
+
+header .logo h1 {
+    display: none;
+}
+
+header ul {
+    overflow: auto;
+    width: 100%;
+}
+
+header ul li {
+    float: left;
+    padding: 8px 0;
+    width: 33.33%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+header ul li:last-of-type {
+    border-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ccc;
+    letter-spacing: 0.2em;
+}
+
+/* #endregion HEADER */
+
+/* #region MAIN*/
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5em;
+}
+
+article {
+    background-color: teal;
+    padding: 8px;
+}
+
+.box1 {
+    padding: 8px;
+    background-color: gold;
+}
+
+.box1 figure {
+    margin: 24px 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box2 {
+    background-color: magenta;
+    padding: 8px;
+}
+
+.box2 ul {
+    overflow: auto;
+}
+
+.box2 ul li {
+    font-family: social;
+    float: left;
+    width: 25%;
+    cursor: pointer;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+main::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* #endregion MAIN*/
+
+footer {
+    background-color: #222;
+    min-height: 100px;
+    color: #ccc;
+    position: relative;
+    margin-top: .5em;
+}
+
+footer span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width:550px) {
+
+    body {
+        font-size: 1.2em;
+    }
+
+    header .logo {
+        padding-top: 16px;
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    header .logo img {
+        float: left;
+        padding-top: 0;
+    }
+
+    header .logo h1 {
+        display: inline-block;
+        color: #ccc;
+        text-indent: .5em;
+        margin: 0;
+    }
+
+    main .box1 {
+        overflow: auto;
+    }
+
+    main .box1 figure {
+        float: left;
+        width: 50%;
+    }
+
+    main .box1 figure img {
+        width: 90%;
+    }
+
+    main .box2 ul li {
+        font-size: 1.5em;
+    }
+   
+}
+
+@media only screen and (min-width: 1024px) {
+
+    header nav {
+        overflow: auto;
+        padding-top: 24px;
+    }
+
+    header nav ul {
+        float: right;
+    }
+
+    header nav ul li {
+        border-right: 0;
+    }
+
+    header .logo {
+        width: 50%;
+        margin: 0;
+        float: left;
+        padding-left: 16px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    main article {
+        overflow: auto;
+        padding: 24px;
+        position: relative;
+        font-size: 1.1em;
+        margin-top: .5em;
+    }
+
+    main article p{
+        max-width: 40ch;
+    }
+
+    main article p:nth-of-type(2) {
+        float: right;
+    }
+
+    main article::before {
+        content: url(./Immagini/design.png);
+        position: absolute;
+        top: 75%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    main article::after {
+        content: url(./Immagini/programming.png);
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
+
+    main .box1 {
+        width: 80%;
+        float: left;
+    }
+
+    main .box1 figure {
+        width: 33.33%;
+    }
+
+    main .box2 {
+        width: 20%;
+        float: right;
+        margin-bottom: -9999px;
+        padding-bottom: -9999px;
+        height: 9999px;
+    }
+
+    main .box2 ul li {
+        font-size: 1.8em;
+        width: 100%;
+        height: 125px;
+    }
+}

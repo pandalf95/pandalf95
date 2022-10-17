@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Only PopUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <input type="radio" name="radio" id="apriRadio" hidden>
+        <label for="apriRadio" title="Apri">Apri PopUp (radio)</label>
+
+        <article id="popupRadio">
+
+            <figure>
+                <img src="./media/banner.jpg" alt="Non supporti il formato dell'immagine" class="selector">
+            </figure>
+            
+
+            <input type="radio" name="radio" id="chiudiRadio" hidden>
+            <label for="chiudiRadio" title="Chiudi">&times;</label>
+
+        </article>
+
+        <a href="#popupTarget" title="Apri">Apri PopUp (target)</a>
+
+        <article id="popupTarget">
+
+            <div id="video-container">
+
+                <video src="./media/video.mp4" controls preload="metadata"></video>
+
+            </div>
+
+            <a href="#" title="Chiudi">&times;</a>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>

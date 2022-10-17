@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Layout GRID|FLEXBOX</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav>
+
+            <section class="logo">
+                <a href="javascript:void(0)"><img src="./media/logo-labfortraining.png" alt="Logo Sito" title="Logo LabForTraining"></a>
+            </section>
+
+            <div>
+                <input type="checkbox" id="tasto-menu" name="tasto-menu" hidden>
+                <label for="tasto-menu"></label>
+            </div>
+
+            <section class="menu">
+                <ul>
+                    <li><a href="javascript:void(0)">Chi Siamo</a></li>
+                    <li><a href="javascript:void(0)">Corsi</a></li>
+                    <li><a href="javascript:void(0)">FAQ</a></li>
+                    <li><a href="javascript:void(0)">LabForYOU</a></li>
+                    <li><a href="javascript:void(0)">Aziende</a></li>
+                    <li><a href="javascript:void(0)">Contatti</a></li>
+                </ul>
+            </section>
+
+            <section class="hero-banner">
+                <img src="./media/hero.jpg" alt="Hero Banner Sito" title="Hero Banner LabForTraining">
+            </section>
+
+        </nav>
+
+        <main>
+
+            <article>
+                <h2>TITOLO</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem, officia soluta odit vel libero ipsa totam animi voluptates, voluptatibus consequuntur veniam explicabo reiciendis, optio in ipsum necessitatibus! Libero, nulla.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, molestias. Molestiae, aliquam, vitae velit quisquam earum eligendi voluptatum cupiditate optio labore accusantium necessitatibus accusamus ut, minus totam quasi maiores. Quam.
+                Quidem fugiat fugit quo temporibus amet voluptas dolores sit maxime, dolorum autem esse officia vel laudantium facere error dolore assumenda quis. At rerum quis ex perspiciatis nulla maiores consequatur ut?
+                Ipsum, necessitatibus repudiandae. Laborum sequi ullam nam nostrum sed, minus, quaerat veritatis, hic nemo eius soluta perspiciatis ex! Quaerat minus illo magni assumenda nostrum ut nisi nulla cum eaque dolor.</p>
+
+                <img src="./media/devices-800.jpg" alt="Immagine Promozionale" title="Immagine Promozionale">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel consequuntur quibusdam tempora ducimus mollitia, doloribus ullam dolore in quasi, iusto quaerat neque, consectetur placeat. Facere, harum corporis? Amet, aliquam!
+                Harum amet esse deleniti enim expedita, iusto et id numquam doloremque quidem repudiandae accusantium sapiente, laudantium quis, cumque est? Quisquam accusantium fugiat dolorem, repellendus ratione ipsam illum atque amet totam.</p>
+            </article>
+
+            <aside class="aside1">
+                <h2>SEGUICI</h2>
+                
+                <ul>
+                    <li><a href="javascript:void(0)">a</a></li>
+                    <li><a href="javascript:void(0)">b</a></li>
+                    <li><a href="javascript:void(0)">c</a></li>
+                    <li><a href="javascript:void(0)">d</a></li>
+                </ul>
+            </aside>
+
+            <aside class="aside2">
+                <h2>I NOSTRI DOCENTI</h2>
+                <p>Nome Cognome</p>
+                <p>Nome Cognome</p>
+                <p>Nome Cognome</p>
+                <p>Nome Cognome</p>
+                <p>Nome Cognome</p>
+                <p>Nome Cognome</p>
+            </aside>
+
+        </main>
+
+        <footer>
+            <span>FOOTER</span>
+        </footer>
+
+    </div>
+
+    <script>
+
+        let tasto =  document.getElementById("tasto-menu");
+        let menu = document.querySelector("section.menu ul")
+
+        tasto.addEventListener("change", function() {
+        
+            if (this.checked) {
+                console.log("checked")
+                menu.classList.add("mostra");
+                document.querySelector("nav div label[for = \"tasto-menu\"]").classList.add("chiudi")
+            }
+            else {
+                menu.classList.remove("mostra");
+                document.querySelector("nav div label[for = \"tasto-menu\"]").classList.remove("chiudi")
+            }
+        })
+
+    </script>
+</body>
+</html>
